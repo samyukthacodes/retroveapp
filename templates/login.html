@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/style_index.css') }} " type = "text/css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/nav.css') }}" type = "text/css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/login.css') }}" type = "text/css">
+    
+</head>
+<body style="background-color: #ffffff ;">
+    <!-- navbar -->
+    <nav>
+      <div class="logo">
+        <h3><a href="retrove.html" class="logo-name">Retrove</a></h3>
+      </div>
+      <ul class="nav-links">
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('contact') }}">ContactUs</a></li>
+        <li><a href="{{ url_for('map') }}">Map</a></li>
+        <li><a href="{{ url_for('login') }}" id="login">Login</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  <!-- navbar --> 
+  <div class = "container">
+
+    <div class="container">
+      <div class="card">
+        <div class="card_title">
+          <div class="logo">
+            <h3 class="logo-name">Retrove</h3>
+          </div>
+          <h1>Login</h1>
+          <span>Don't have an account? <a href="{{ url_for('register') }}">Sign Up</a></span>
+        </div>
+        <div class="form">
+          
+          <form action="/signin" method="post">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="pass" required><br>
+            <input type="submit" value="Sign In">
+        </form>
+        </div>
+        
+      </div>
+    </div>
+    
+
+
+  
+</body>
+</html>

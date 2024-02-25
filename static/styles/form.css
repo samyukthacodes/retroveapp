@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px; /* Added font size */
+    color: #e85a48; /* Added color */
+  }
+  
+  .upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form elements horizontally */
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    display: flex; /* Make form groups horizontal */
+    width: 100%; /* Allow full width for responsive design */
+  }
+  
+  label {
+    width: 120px; /* Fixed label width for better alignment */
+    font-weight: bold;
+    margin-right: 10px; /* Added margin for spacing */
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  textarea,
+  select {
+    flex: 1; /* Elements should grow to fill remaining space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%; /* Removed width property, form group handles it now */
+    padding: 10px;
+    background-color: #e85a48;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e85a48;
+  }
+  /* Existing styles... */
+
+.back-button {
+    margin-bottom: 5px; /* Add some spacing below the button */
+    padding: 5px 5px;
+    background-color: #e85a48;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #ccc;
+  }
+  
+  

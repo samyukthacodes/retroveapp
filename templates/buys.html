@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products for Sale</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/buys.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/nav.css') }}">
+</head>
+<body>
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js"></script>
+<script src="/Users/samyukthasudheer/retrove/retrove-app-firebase-adminsdk-onzln-141c93b6a8.json"></script>
+<script>
+    // Initialize Firebase Auth
+    const auth = firebase.auth();
+  </script>
+
+<script>
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        // User is logged in
+        console.log("User is logged in:", user);
+        // You can now display the image based on user authentication
+        // ...
+      } else {
+        // User is not logged in
+        console.log("User is not logged in");
+        // You might want to redirect to a login page or display a message
+      }
+    });
+  </script>
+  <nav>
+  <div class="logo">
+    <h3><a href="retrove.html" class="logo-name">Retrove</a></h3>
+  </div>
+  <ul class="nav-links">
+    <li><a href="{{ url_for('index') }}">Home</a></li>
+    <li><a href="{{ url_for('contact') }}">ContactUs</a></li>
+    <li><a href="{{ url_for('media') }}">Media</a></li>
+    <li><a href="{{ url_for('map') }}">Map</a></li>
+    <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+    <li><a href="{{ url_for('logout') }}">Logout</a></li>
+    
+  </ul>
+  <div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+</nav>
+    <h1>Products</h1>
+    <div class="product-container">
+        {% for product in products %}
+        <div class="product">
+            <div class="product-image">
+                <img src="{{ product.image_url }}" alt="{{ product.title }}">
+            </div>
+            <div class="product-details">
+                <h2>{{ product.title }}</h2>
+                <p>{{ product.description }}</p>
+                <p>Type: {{ product.type }}</p>
+                <p>Price: Rs.{{ product.price }}</p>
+            </div>
+            
+              
+        </div>
+        {% endfor %}
+    </div>
+    
+</body>
+</html>

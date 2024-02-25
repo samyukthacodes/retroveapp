@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Beth+Ellen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nova+Cut|Nova+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/style_index.css') }} " type = "text/css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/nav.css') }}" type = "text/css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/login.css') }}" type = "text/css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/merlin.css') }}" type = "text/css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/categories.css') }}" type = "text/css">
+</head> 
+<body>  
+  <!-- navbar -->
+    <nav>
+      <div class="logo">
+        <h3><a href="retrove.html" class="logo-name">Retrove</a></h3>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('contact') }}">ContactUs</a></li>
+        <li><a href="{{ url_for('media') }}">Media</a></li>
+        <li><a href="{{ url_for('map') }}">Map</a></li>
+        <li><a href="{{ url_for('logout') }}">Logout</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+</div>
+
+<br><br>
+<br><br>
+
+<br>
+<br>
+<center><h2 class="head-of-offer">STYLES TO STEAL</h2>
+<p class="para-of-offer">Inspired by influencers</p></center>
+
+<br><br>
+
+<div class="index-grid-img-3">
+  <a href="products.html"><img src="{{ url_for('static',filename='images/index-img/girl1.png')}}" alt=""></a>
+  <a href="products.html"><img src="{{ url_for('static',filename='images/index-img/girl2.png')}}" alt="" srcset=""></a>
+  <a href="products.html"><img src="{{ url_for('static',filename='images/index-img/girl3.png')}}" alt=""></a>
+  <a href="products.html"><img src="{{ url_for('static',filename='images/index-img/girl4.png')}}" alt="" srcset=""></a>
+</div>
+<!-- ALL THE LINKS WILL GO TO products.html -->
+
+<br><br>
+
+<br><br>
+
+<div class="index-grid-img-3">
+  <a href="products.html"><img src="{{ url_for('static',filename='images/index-img/girl1.png')}}" alt=""></a>
+  <a href="products.html"><img src="{{ url_for('static',filename='images/index-img/girl2.png')}}" alt="" srcset=""></a>
+  <a href="products.html"><img src="{{ url_for('static',filename='images/index-img/girl3.png')}}" alt=""></a>
+  <a href="products.html"><img src="{{ url_for('static',filename='images/index-img/girl4.png')}}" alt="" srcset=""></a>
+</div>
+<!-- ALL THE LINKS WILL GO TO products.html -->
+
+<br><br>
+
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <div class="footer-container">
+        <div class="footer-1">
+          <a href="index.html"><h2>Retrove🦋</h2></a>
+          <br>
+          <p><b>ONLINE SHOPPING</b></p>
+            <h6>
+              Men<br><br>
+              Women <br><br>
+              Kids <br><br>
+              Retrove Exclusive<br><br>
+            </h6>
+        </div>
+  
+        <div class="footer-2">
+          <p><b>USEFUL LINKS</b></p>
+          <h6>
+            Contact Us<br><br>
+            FAQ<br><br>
+            T&C<br><br>
+            Blog<br><br>
+            Privacy Policy<br><br>
+          </h6>
+        </div>
+
+        
+  
+        <div class="footer-3">
+          <p><b>100% Original</b> guarantee</p>
+            <h6>
+              for all products at retrove.com
+            </h6>
+          <p><b>Return within 30days</b> of</p>
+            <h6>
+              receiving you order
+            </h6>
+          <p><b>Get free delivery</b> for every</p>
+            <h6>
+              order above Rs.999
+            </h6>
+          <br><br>
+        </div>
+        
+      </div>
+      <p class="copy-right"><a href="index.html">Retrove</a>&copy;2024</p>
+      <br>
+    <!-- FOOTER -->
+  
+    <script type="text/javascript" src="js/nav.js"></script>
+    </body>
+  </html>

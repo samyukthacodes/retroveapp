@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Product</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='styles/form.css')}}">  </head>
+<body>
+  <nav>
+    </nav>
+
+  <div class="container">
+    <div class="form-wrapper">  <h1>Upload Product</h1>
+      <form action="donate" method="POST" enctype="multipart/form-data" class="upload-form">
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+          </div>
+        <div class="form-group">
+          <label for="From">From:</label>
+          <input type="text" id="from" name="from" required>
+        </div>
+        <div class="form-group">
+          <label for="image">Image:</label>
+          <input type="file" id="image" name="image" accept="image/*" required>
+        </div>
+        <div class="form-group">
+          <label for="To">To:</label>
+          <input type="text" id="to" name="to" min="0" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="5" required></textarea>
+        </div>
+
+       
+        <button type="submit">Upload Product</button>
+      </form>
+    </div>
+  </div>
+  
+  <script src="script.js"></script> </body>
+</body>
+</html>
